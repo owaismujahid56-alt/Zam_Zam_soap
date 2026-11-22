@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MK Organic – Zam Zam Soap (Sidr + Rose)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#F5EBDC;--surface:#EBDCC3;--ink:#3A2318;--muted:#6B4F3F;--red:#A7241F;--on-red:#F5EBDC;--line:#D8C5A6;--accent:#C98A2B;
+--gutter:clamp(1rem,4vw,1.5rem);--section-y:clamp(2.5rem,8vw,4rem)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2A1A12;--surface:#3A251A;--ink:#F3E6D2;--muted:#CDB59A;--red:#E0574F;--on-red:#2A1A12;--line:#54392A}}
+:root[data-theme="dark"]{--bg:#2A1A12;--surface:#3A251A;--ink:#F3E6D2;--muted:#CDB59A;--red:#E0574F;--on-red:#2A1A12;--line:#54392A}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem;-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 clamp(1rem,.95rem + .25vw,1.0625rem)/1.6 Figtree,system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);overflow-wrap:break-word}
+h1,h2{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:max(var(--gutter),env(safe-area-inset-left,0px)) max(var(--gutter),env(safe-area-inset-right,0px))}
+header{display:flex;justify-content:space-between;align-items:center;gap:.75rem;padding:.9rem 0;}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-size: 20px;font-size-adjust: 1.01; clamp(1rem,4.5vw,1.2rem) "Bricolage Grotesque",sans-serif;min-width:0}
+.brand img{width:clamp(38px,10vw,46px);height:clamp(38px,10vw,46px);border-radius:50%;flex:none}
+nav{display:flex;gap:1.25rem;align-items:center;flex:none}
+nav a{text-decoration:none;font-weight:500}
+nav .go{background:var(--red);color:var(--on-red);padding:.55rem 1.05rem;border-radius:999px;white-space:nowrap}
+.hero{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(1.5rem,5vw,2.5rem);align-items:center;padding:clamp(1rem,4vw,2.5rem) 0 var(--section-y)}
+.hero h1{font-size:clamp(2rem,7vw + .3rem,4.4rem);font-weight:800;color:var(--red)}
+.hero p{color:var(--muted);font-size:clamp(1.05rem,1rem + .3vw,1.15rem);max-width:32ch;margin:1.1rem 0 1.4rem}
+.price{font:700 clamp(1.4rem,5vw,1.6rem) "Bricolage Grotesque",sans-serif;margin-bottom:1.4rem}
+.price small{font:500 1rem Figtree,sans-serif;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border:0;cursor:pointer;background:var(--red);color:var(--on-red);font:600 1rem Figtree,sans-serif;padding:.8rem 1.6rem;border-radius:999px;text-decoration:none;text-align:center}
+.photo{border-radius:clamp(18px,4vw,28px);width:100%;box-shadow:0 18px 34px -18px rgba(83, 3, 3, 0.55);
+transition:transform .3s ease}
+section{padding:var(--section-y) 0}
+.band{background:var(--surface)}
+h2{font-size:clamp(1.6rem,5vw + .2rem,2.8rem);font-weight:800;margin-bottom:1.25rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,5vw,2.5rem);align-items:center}
+.benefits{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+.benefits li{padding:.8rem 1.1rem;border-left:5px solid var(--red);background:var(--bg);border-radius:0 14px 14px 0;font-weight:500}
+.gallery{display:grid;grid-template-columns:1.4fr 1fr;gap:1.25rem;align-items:center}
+.gallery .label{border-radius:50%;width:100%;max-width:340px;margin:0 auto;box-shadow:0 14px 28px -16px rgba(248, 247, 247, 0.5)  }
+.order{width:100%;max-width:520px;background:var(--bg);border:2px solid var(--line);border-radius:clamp(18px,4vw,26px);padding:clamp(1.1rem,4vw,1.6rem)}
+.qty{display:flex;align-items:center;gap:1rem;margin:1rem 0 1.2rem}
+.qty button{width:48px;height:48px;border-radius:50%;border:2px solid var(--red);background:transparent;color:var(--ink);font:700 1.4rem Figtree,sans-serif;cursor:pointer;touch-action:manipulation}
+.qty output{font:700 1.5rem "Bricolage Grotesque",sans-serif;min-width:2ch;text-align:center}
+.total{display:flex;justify-content:space-between;gap:1rem;font:700 clamp(1.2rem,4.5vw,1.4rem) "Bricolage Grotesque",sans-serif;margin-bottom:1.2rem}
+.call{margin:1rem 0 0;color:var(--muted)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Gol shape ke liye */
+  background-color: #ffffff; /* Default dark background */
+  color: #ffffff; /* Icon ka color */
+  text-decoration: none;
+  
+  /* Smooth animation ke liye ye sabse zaroori hai */
+  transition: all 0.3s ease; 
+}
+
+/* Jab mouse icon ke upar aaye (Hover State) */
+.social-icon:hover {
+  background-color: #ffffff; /* Facebook ka asli Blue color */
+  color: #100f64;
+  transform: translateY(-4px) scale(1.05); /* Thoda upar uthega aur halka sa bada hoga */
+  box-shadow: 0 6px 15px rgba(24, 119, 242, 0.4); /* Neeche halka blue glow/shadow */
+}
+
+
+/* Tablet */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+}
+/* Phone */
+@media (max-width:760px){
+  .hero,.two,.gallery{grid-template-columns:1fr}
+  nav a:not(.go){display:none}
+  .hero p{max-width:none}
+  .hero .btn,.order .btn{width:100%}
+  .gallery .label{max-width:260px}
+  .order{max-width:none}
+}
+/* Small phones */
+@media (max-width:380px){
+  header{padding:.7rem 0}
+  nav .go{padding:.5rem .85rem;font-size:.95rem}
+  .benefits li{padding:.7rem .9rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+  <div style="background-color: #3f0404; >
+<div  class="wrap">
+  <header>  
+    <a class="brand" href="#top" style="color: rgb(66, 12, 12); font-family: 'Courier New', Courier, monospace; font-weight: 700; color: #bd440d; text-align: start;  
+      margin-left:40px;"><img src="images/logo.png" alt="MK Organic logo" width="36" height="36" style="width: 100px; height:100px;">
+       <i style="font-size: 30px; font-weight: bold; color: rgb(255, 255, 255);">MK
+
+       </i> Organic</a>
+    <nav style="color: #ffffff;  margin-right:40px;">
+      <a href="#benefits">Benefits</a>
+      <a href="#gallery">Photos</a>
+      <a class="go" href="#order">Order now</a>
+    </div>
+  </header> </nav>
+  <main id="top" class="hero">
+    <div style=" margin-left:40px;">
+      <h1>Zam Zam Soap with Sidr + Rose</h1>
+      <p>Handmade herbal soap for face and body, wrapped in plain recycled card.</p>
+      <div class="price">Rs. 350 <small>/ AED 4.65</small></div>
+      <a class="btn" href="#order">Order now</a>
+    </div>
+    <img class="photo" src="images/image.png" alt="Zam Zam soap bar with honeycomb and bee design next to its box, among rose petals">
+  </main>
+</div>
+
+<section class="band" id="benefits">
+  <div class="wrap two">
+    <img class="photo" src="images/imageyy.png" alt="Three Zam Zam soap boxes tied with jute twine, surrounded by roses" loading="lazy">
+    <div>
+      <h2>Face aur body dono ke liye</h2>
+      <ul class="benefits">
+        <li>Skin saaf kare</li><li>Dane kam kare</li><li>Black spot kam kare</li>
+        <li>Natural glow laye</li><li>Skin ko gora kare</li><li>Skin ko tight kare</li><li>Skin ko thanda kare</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="background-color: #3f0404; padding: 2rem 0;">
+  <div class="wrap">
+    <h2 style="color:white;">Handmade, gift-ready</h2>
+    <div class="gallery">
+      <img class="photo" src="images/imagee.png" alt="Soap bar and three boxes on white cloth with roses" loading="lazy">
+      
+    </div>
+  </div>
+</section>
+
+<section class="band" id="order">
+  <div class="wrap">
+    <h2>Order karein</h2>
+    <div class="order">
+      <strong>Zam Zam Soap (Sidr + Rose)</strong>
+      <div class="qty">
+        <button id="minus" aria-label="Kam karein">−</button>
+        <output id="q" aria-live="polite">1</output>
+        <button id="plus" aria-label="Zyada karein">+</button>
+      </div>
+      <div class="total"><span>Total</span><span id="total">Rs. 350</span></div>
+      <a class="btn" id="send" href="#order">Order on WhatsApp</a>
+      <p class="call">Ya call karein: <a href="tel:03162822863">0316-2822863</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  
+  
+  
+  
+  <footer>© MK Organic. Handmade herbal soap.</footer>
+
+<div style="background-color: #d8b889; padding: 10px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  ">
+ <dt style="font-weight: 900;"> NOTE:
+ </dt>
+  <dd>
+Jo Log Formula Ya Ked Medicated Creams Use Kar Rahe Hain Unko Dane Ya Redness Hoto Ghabrae Nhi SOAP "HARBAL" OR "WITHOUT ANY CHEMICAL HAI" Ahista Ahista Skin Ko Clean Kardega Or Skin Ko Natural Kar 
+<mark> IN SHA ALLAH</mark></dd></div> <br>
+
+
+<div style="display: flex; gap: 10px; justify-content: center; margin-top: 20px;">  
+<a href="https://facebook.com/mateen.ghanchi" class="social-icon" target="_blank">
+  <i class="fa-brands fa-facebook  fa-2xl" style="color: rgb(40, 80, 150);"></i>
+    
+</a>
+ 
+
+
+
+
+
+
+
+
+<a href="https://facebook.com/mateen.ghanchi" class="social-icon" target="_blank">
+  <i class="fa-brands fa-whatsapp  fa-2xl" style="color: rgb(8, 236, 46);"></i>
+    
+</a>
+
+
+
+
+
+
+
+<a href="https://facebook.com/mateen.ghanchi" class="social-icon" target="_blank">
+  <i class="fa-brands fa-tiktok  fa-2xl" style="color: rgb(0, 0, 0);"></i>
+    
+</a>
+</div>
+
+<br><br>
+</div>
+
+
+
+<!-- whatapp logo lagana ha -->
+</div>
+
+
+
+
+
+<script>
+var PHONE="923162822863", PRICE=350, qty=1;
+function render(){
+  document.getElementById("q").textContent=qty;
+  document.getElementById("total").textContent="Rs. "+(qty*PRICE);
+  var t="Assalam o Alaikum, mujhe "+qty+" Zam Zam Soap (Sidr + Rose) chahiye. Total: Rs. "+(qty*PRICE)+".";
+  document.getElementById("send").href="https://wa.me/"+PHONE+"?text="+encodeURIComponent(t);
+}
+document.getElementById("plus").onclick=function(){qty++;render()};
+document.getElementById("minus").onclick=function(){if(qty>1){qty--;render()}};
+render();
+</script>
+</body>
+</html> is may 3 error ha sahi kar kay do
